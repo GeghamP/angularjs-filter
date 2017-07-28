@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<body>
+
+		<div ng-controller="myCtrl">	
+			<p ng-repeat="item in arr | startsWith:'a' | endsWith:'a'">
+				{{item}}
+			</p>
+		</div>
+		<script src="module.js"></script>
+		<script src="controller.js"></script>
+		<script src="filter.js"></script>
+	</body>
+</html>
